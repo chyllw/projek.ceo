@@ -1,0 +1,186 @@
+/* ======= RESET DAN DASAR ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #f3f7ff, #fff6f0);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======= HEADER ======= */
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #ffb347;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* ======= NAVBAR ======= */
+nav {
+  background-color: #ffb347;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #222;
+  padding: 14px 22px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #6a11cb;
+  border-radius: 5px;
+}
+
+/* ======= SECTION ======= */
+section {
+  background-color: #fff;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 35px 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #6a11cb;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-left: 5px solid #ffb347;
+  padding-left: 10px;
+}
+
+/* ======= PRODUK GRID ======= */
+.produk {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.card {
+  background: linear-gradient(145deg, #ffffff, #f8f9ff);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(106, 17, 203, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #222;
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border: none;
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background: linear-gradient(90deg, #ffb347, #ffcc33);
+  color: #222;
+}
+
+/* ======= TENTANG DAN KONTAK ======= */
+#tentang p,
+#kontak p,
+#kontak ul {
+  font-size: 1rem;
+  color: #444;
+}
+
+#kontak ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#kontak li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#kontak li::before {
+  content: "💬";
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* ======= RESPONSIVE DESIGN ======= */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 25px;
+  }
+
+  nav a {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+}
